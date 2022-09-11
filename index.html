@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <nav>
+        <form class="search" action="https://www.google.com/search" target="_blank">
+            <input type="text" placeholder="Search.." name="q" onfocus="this.placeholder=''"
+                onblur="this.placeholder='Search..'">
+            <button type="submit"><img src="img/search.png"></img></button>
+        </form>
+        <div id="weather">
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h2 id="clock">00:00</h2>
+        <h1 id="greeting" class="hidden"></h1>
+        <span id="cheer"></span>
+        <form id="login-form" class="hidden">
+            <input required maxlength="15" type="text" placeholder="What Is Your Name?" onfocus="this.placeholder=''"
+                onblur="this.placeholder='What Is Your Name?'" />
+        </form>
+        <div class="next-greeting hidden">
+            <form id="todo-form">
+                <input type="text" placeholder="Today" required onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Today'">
+            </form>
+            <div id="todo-div">
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div id="quotes">
+            <span></span>
+            <span class="hidden"></span>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js "></script>
+    <script src="js/weather.js"></script>
+    <script src="js/cheer.js"></script>
+</body>
+
+</html>

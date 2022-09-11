@@ -1,0 +1,239 @@
+.hidden {
+    display: none;
+}
+
+.felxadd {
+    display: flex;
+}
+
+html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+
+#BGId {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+}
+
+nav,
+main,
+footer {
+    position: relative;
+    top: auto;
+    z-index: 1;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 45px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dbdbdbc3;
+    border: 1px #d1d1d1 solid;
+    border-radius: 10px;
+}
+
+.search button,
+.search input {
+    background: no-repeat none;
+    border: none;
+    color: #4f4f4f;
+}
+
+.search input[type="text"]:focus {
+    outline: none;
+}
+
+.search:hover {
+    background: #a3a3a3;
+}
+
+.search button img {
+    background: no-repeat none;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    padding-top: 0.2rem;
+}
+
+#weather {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#weather div {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 1px 1px 2px rgba(80, 80, 80, 0.557);
+    ;
+}
+
+#weather div span:nth-child(1) {
+    font-size: 1.5rem;
+    flex-basis: 2;
+}
+
+#weather div span:nth-child(2) {
+    font-size: 0.8rem;
+    flex-basis: 1;
+}
+
+#weather img {
+    height: 2.5em;
+    align-self: flex-start;
+}
+
+main {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    flex-direction: column;
+    text-shadow: 1px 1px 2px rgba(80, 80, 80, 0.557);
+}
+
+#clock {
+    font-size: 3.8rem;
+    margin: 1rem
+}
+
+#login-form input {
+    width: 20em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dbdbdbc3;
+    border: 1px #d1d1d1 solid;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+#login-form input[type="text"]:focus {
+    outline: none;
+}
+
+#login-form input:hover {
+    background: #a3a3a3;
+}
+
+#greeting {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#todo-form input {
+    width: 20em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dbdbdbc3;
+    border: 1px #d1d1d1 solid;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 1.8em;
+}
+
+#todo-form input[type="text"]:focus {
+    outline: none;
+    color: #4f4f4f;
+}
+
+#todo-form input:hover {
+    background: #a3a3a3;
+    color: #272727;
+}
+
+.next-greeting {
+    flex-direction: column;
+}
+
+#todo-div {
+    width: 20em;
+    height: 8em;
+    margin-top: 0.5em;
+    background-color: #d1d1d1ab;
+    border: 2px solid none;
+    border-radius: 10px;
+    overflow: scroll;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(80, 80, 80, 0.557);
+}
+
+#todo-list {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0.6em;
+}
+
+#todo-list input[type="checkbox"] {
+    /* width: 1em;
+    height: 1em; */
+    background: no-repeat none;
+    cursor: pointer;
+    border: #d1d1d1;
+}
+
+#todo-list li:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+
+}
+
+footer {
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quotes {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.555);
+    text-align: center;
+}
+
+#quotes span:nth-of-type(1) {
+    font-size: 1rem;
+}
+
+#quotes span:nth-of-type(2) {
+    font-size: 0.8rem;
+}
+
+aside {
+    position: absolute;
+    right: 0;
+    bottom: 3vh;
+}
